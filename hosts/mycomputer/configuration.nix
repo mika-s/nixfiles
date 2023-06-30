@@ -73,6 +73,8 @@
     chromium
     git
     htop
+    keepassxc
+    nextcloud-client
     tree
     vim
     vlc
