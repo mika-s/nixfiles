@@ -74,8 +74,12 @@
     git
     htop
     keepassxc
+    jetbrains.clion
     nextcloud-client
+    python3Full
     tree
+    unixtools.xxd
+    unzip
     vim
     vlc
     wget
