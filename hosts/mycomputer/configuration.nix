@@ -70,9 +70,12 @@
    };
 
   environment.systemPackages = with pkgs; [
+    ark
     chromium
+    fzf
     git
     htop
+    kate
     keepassxc
     jetbrains.clion
     nextcloud-client
