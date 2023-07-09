@@ -4,6 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      <home-manager/nixos>
     ];
 
   nix = {
@@ -68,6 +69,23 @@
      packages = with pkgs; [
      ];
    };
+
+  home-manager.users.myuser = { pkgs, ... }: {
+    home.packages = [
+
+    ];
+    programs.bash.enable = true;
+    programs.fzf.enable = true;
+    programs.git = {
+      enable = true;
+      userName = "Mika Sundland";
+      userEmail = "mika.sundland@gmail.com";
+      aliases = {
+        adog = "log --all --decorate --oneline --graph";
+      };
+    };
+    home.stateVersion = "23.05";
+  };
 
   environment.systemPackages = with pkgs; [
     ark
