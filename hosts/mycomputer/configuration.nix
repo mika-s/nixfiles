@@ -97,6 +97,7 @@
     keepassxc
     jetbrains.clion
     nextcloud-client
+    okular
     python3Full
     spotify
     tree
