@@ -98,6 +98,7 @@
     jetbrains.clion
     nextcloud-client
     python3Full
+    spotify
     tree
     unixtools.xxd
     unzip
