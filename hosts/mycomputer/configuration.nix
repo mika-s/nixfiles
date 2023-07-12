@@ -95,6 +95,7 @@
     htop
     libreoffice-qt
     kate
+    libsForQt5.kcalc
     keepassxc
     jetbrains.clion
     nextcloud-client
