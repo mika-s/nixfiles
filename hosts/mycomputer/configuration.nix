@@ -93,6 +93,7 @@
     fzf
     git
     htop
+    libreoffice-qt
     kate
     keepassxc
     jetbrains.clion
