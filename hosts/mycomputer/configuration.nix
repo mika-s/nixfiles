@@ -92,6 +92,7 @@
     fzf
     git
     htop
+    hwinfo
     libreoffice-qt
     libsForQt5.kcalc
     kate
