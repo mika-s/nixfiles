@@ -95,6 +95,7 @@
     hwinfo
     libreoffice-qt
     libsForQt5.kcalc
+    libsForQt5.kolourpaint
     kate
     keepassxc
     jetbrains.clion
