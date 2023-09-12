@@ -117,6 +117,10 @@
     dedicatedServer.openFirewall = true;
   };
 
+  programs.thunar.plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+  ];
+
   security.sudo = {
     enable = true;
     extraRules = [{
