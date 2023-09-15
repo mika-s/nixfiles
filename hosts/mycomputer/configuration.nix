@@ -83,6 +83,15 @@
         adog = "log --all --decorate --oneline --graph";
       };
     };
+    programs.chromium = {
+      enable = true;
+      extensions = [
+        "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock origin
+        "oboonakemofpalcgghocfoadofidjkkk" # KeePassXC-Browser
+        "mnjggcdmjocbbbhaepdhchncahnbgone" # SponsorBlock for youtube
+      ];
+    };
+
     home.stateVersion = "23.05";
   };
 
