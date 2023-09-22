@@ -108,6 +108,7 @@
     kate
     keepassxc
     jetbrains.clion
+    jq
     nextcloud-client
     okular
     python3Full
