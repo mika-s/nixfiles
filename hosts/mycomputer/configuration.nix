@@ -108,6 +108,7 @@
     kate
     keepassxc
     jetbrains.clion
+    jetbrains.pycharm-professional
     jq
     nextcloud-client
     okular
