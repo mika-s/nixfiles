@@ -106,6 +106,7 @@
     libsForQt5.kcalc
     libsForQt5.kolourpaint
     kate
+    kdiff3
     keepassxc
     jetbrains.clion
     jetbrains.pycharm-professional
