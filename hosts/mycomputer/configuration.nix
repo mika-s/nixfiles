@@ -113,7 +113,7 @@
     jq
     nextcloud-client
     okular
-    python3Full
+    (python3Full.withPackages (ps: with ps; [ colorama ]))
     spotify
     tree
     unixtools.xxd
