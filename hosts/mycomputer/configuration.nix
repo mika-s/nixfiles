@@ -109,11 +109,12 @@
     kdiff3
     keepassxc
     jetbrains.clion
+    jetbrains.datagrip
     jetbrains.pycharm-professional
     jq
     nextcloud-client
     okular
-    (python3Full.withPackages (ps: with ps; [ colorama ]))
+    (python3Full.withPackages (ps: with ps; [ colorama psycopg2 ]))
     spotify
     tree
     unixtools.xxd
