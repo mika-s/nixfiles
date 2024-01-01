@@ -62,8 +62,9 @@
   users.users.myuser = {
      isNormalUser = true;
      extraGroups = [
-       "wheel"
+       "docker"
        "networkmanager"
+       "wheel"
      ];
      packages = with pkgs; [
      ];
@@ -71,7 +72,13 @@
 
   home-manager.users.myuser = { pkgs, ... }: {
     home.packages = [
-
+      pkgs.bat
+      pkgs.bat-extras.batman
+      pkgs.bat-extras.batpipe
+      pkgs.bat-extras.batgrep
+      pkgs.bat-extras.batdiff
+      pkgs.bat-extras.batwatch
+      pkgs.bat-extras.prettybat
     ];
     programs.bash.enable = true;
     programs.fzf.enable = true;
@@ -114,7 +121,7 @@
     jq
     nextcloud-client
     okular
-    (python3Full.withPackages (ps: with ps; [ colorama psycopg2 ]))
+    python3Full
     spotify
     tree
     unixtools.xxd
@@ -124,11 +131,7 @@
     wget
   ];
 
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-  };
+  virtualisation.docker.enable = true;
 
   programs.thunar.plugins = with pkgs.xfce; [
     thunar-archive-plugin
