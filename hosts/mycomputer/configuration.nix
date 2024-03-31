@@ -123,6 +123,7 @@
     okular
     python3Full
     spotify
+    stremio
     tree
     unixtools.xxd
     unzip
