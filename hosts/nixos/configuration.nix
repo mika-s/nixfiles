@@ -140,6 +140,7 @@
     jetbrains.clion
     jetbrains.datagrip
     jetbrains.pycharm-professional
+    jetbrains.rust-rover
     jq
     nextcloud-client
     okular
