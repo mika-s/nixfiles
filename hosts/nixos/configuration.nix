@@ -8,7 +8,7 @@
     ];
 
   nix = {
-    package = pkgs.nixUnstable;
+#    package = pkgs.nixUnstable;
   };
   nix.settings.experimental-features = [
 	"nix-command"
@@ -23,8 +23,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos";
-
   networking.networkmanager.enable = true;
+  networking.firewall.enable = true;
 
   time.timeZone = "Europe/Oslo";
 
@@ -43,14 +43,14 @@
 
   services.xserver = {
     enable = true;
-    layout = "no";
+    xkb.layout = "no";
     displayManager = {
       gdm.enable = true;
     };
     desktopManager = {
       gnome.enable = true;
     };
-    xkbVariant = "";
+    xkb.variant = "";
   };
 
   console = {
