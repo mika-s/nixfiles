@@ -113,7 +113,7 @@
       ];
     };
 
-    home.stateVersion = "23.11";
+    home.stateVersion = "24.05";
   };
 
   programs.steam = {
@@ -139,6 +139,7 @@
     keepassxc
     jetbrains.clion
     jetbrains.datagrip
+    jetbrains.idea-ultimate
     jetbrains.pycharm-professional
     jetbrains.rust-rover
     jq
