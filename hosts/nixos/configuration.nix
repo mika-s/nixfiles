@@ -110,6 +110,7 @@
         "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock origin
         "oboonakemofpalcgghocfoadofidjkkk" # KeePassXC-Browser
         "mnjggcdmjocbbbhaepdhchncahnbgone" # SponsorBlock for youtube
+        "nmkinhboiljjkhaknpaeaicmdjhagpep" # Fluff Busting Purity
       ];
     };
 
