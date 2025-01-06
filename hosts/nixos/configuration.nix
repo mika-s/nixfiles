@@ -55,13 +55,11 @@
 
   console = {
     font = "Lat2-Terminus16";
-    #useXkbConfig = true;
   };
 
   console.keyMap = "no";
 
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -121,6 +119,7 @@
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
   };
 
   programs.java.enable = true;
