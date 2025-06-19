@@ -125,17 +125,19 @@
   programs.java.enable = true;
 
   environment.systemPackages = with pkgs; [
-    ark
+    brave
     chromium
     fzf
     git
     htop
     hwinfo
     libreoffice-qt
-    libsForQt5.kcalc
-    libsForQt5.kolourpaint
-    kate
     kdiff3
+    kdePackages.ark
+    kdePackages.kate
+    kdePackages.kcalc
+    kdePackages.kolourpaint
+    kdePackages.okular
     keepassxc
     jetbrains.clion
     jetbrains.datagrip
@@ -144,7 +146,6 @@
     jetbrains.rust-rover
     jq
     nextcloud-client
-    okular
     python3Full
     spotify
     stremio
@@ -154,8 +155,12 @@
     vim
     vlc
     wget
+    wineWowPackages.stable
+    wineWowPackages.waylandFull
+    winetricks
   ];
 
+  virtualisation.virtualbox.host.enable = true;
   virtualisation.docker.enable = true;
 
   security.sudo = {
