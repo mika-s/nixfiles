@@ -129,6 +129,7 @@
     chromium
     fzf
     git
+    gparted
     htop
     hwinfo
     libreoffice-qt
@@ -136,6 +137,7 @@
     kdePackages.ark
     kdePackages.kate
     kdePackages.kcalc
+    kdePackages.kdenlive
     kdePackages.kolourpaint
     kdePackages.okular
     keepassxc
