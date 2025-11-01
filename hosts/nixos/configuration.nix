@@ -127,9 +127,11 @@
   environment.systemPackages = with pkgs; [
     brave
     chromium
+    ffmpeg_6-headless
     fzf
     git
     gparted
+    gpsbabel-gui
     htop
     hwinfo
     libreoffice-qt
@@ -164,6 +166,21 @@
 
   virtualisation.virtualbox.host.enable = true;
   virtualisation.docker.enable = true;
+
+  fonts.fontDir.enable = true;
+
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    liberation_ttf
+    fira-code
+    fira-code-symbols
+    mplus-outline-fonts.githubRelease
+    dina-font
+    proggyfonts
+    roboto
+  ];
 
   security.sudo = {
     enable = true;
