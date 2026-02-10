@@ -143,6 +143,8 @@
     kdePackages.kolourpaint
     kdePackages.okular
     keepassxc
+    kind
+    kubectl
     jetbrains.clion
     jetbrains.datagrip
     jetbrains.idea-ultimate
