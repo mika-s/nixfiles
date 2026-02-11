@@ -44,14 +44,10 @@
   services.xserver = {
     enable = true;
     xkb.layout = "no";
-    displayManager = {
-      gdm.enable = true;
-    };
-    desktopManager = {
-      gnome.enable = true;
-    };
     xkb.variant = "";
   };
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   console = {
     font = "Lat2-Terminus16";
@@ -94,22 +90,13 @@
     ];
     programs.bash.enable = true;
     programs.fzf.enable = true;
-    programs.git = {
+    programs.git.settings = {
       enable = true;
       userName = "Mika Sundland";
       userEmail = "mika.sundland@gmail.com";
       aliases = {
         adog = "log --all --decorate --oneline --graph";
       };
-    };
-    programs.chromium = {
-      enable = true;
-      extensions = [
-        "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock origin
-        "oboonakemofpalcgghocfoadofidjkkk" # KeePassXC-Browser
-        "mnjggcdmjocbbbhaepdhchncahnbgone" # SponsorBlock for youtube
-        "nmkinhboiljjkhaknpaeaicmdjhagpep" # Fluff Busting Purity
-      ];
     };
 
     home.stateVersion = "24.05";
@@ -126,7 +113,6 @@
 
   environment.systemPackages = with pkgs; [
     brave
-    chromium
     ffmpeg_6-headless
     fzf
     git
@@ -147,12 +133,12 @@
     kubectl
     jetbrains.clion
     jetbrains.datagrip
-    jetbrains.idea-ultimate
-    jetbrains.pycharm-professional
+    jetbrains.idea
+    jetbrains.pycharm
     jetbrains.rust-rover
     jq
     nextcloud-client
-    python3Full
+    python315
     spotify
     stremio
     tree
@@ -166,6 +152,8 @@
     winetricks
   ];
 
+  nixpkgs.config.permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
+
   virtualisation.virtualbox.host.enable = true;
   virtualisation.docker.enable = true;
 
@@ -174,7 +162,7 @@
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     liberation_ttf
     fira-code
     fira-code-symbols
