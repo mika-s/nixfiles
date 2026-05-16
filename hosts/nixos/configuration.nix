@@ -109,8 +109,6 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
-  programs.java.enable = true;
-
   environment.systemPackages = with pkgs; [
     brave
     ffmpeg_6-headless
@@ -131,6 +129,7 @@
     keepassxc
     kind
     kubectl
+    jdk25_headless
     jetbrains.clion
     jetbrains.datagrip
     jetbrains.idea
@@ -147,9 +146,6 @@
     vim
     vlc
     wget
-    wineWowPackages.stable
-    wineWowPackages.waylandFull
-    winetricks
   ];
 
   nixpkgs.config.permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
