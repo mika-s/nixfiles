@@ -112,6 +112,7 @@
   environment.systemPackages = with pkgs; [
     brave
     ffmpeg_6-headless
+    filezilla
     fzf
     git
     gparted
@@ -136,7 +137,6 @@
     jetbrains.pycharm
     jetbrains.rust-rover
     jq
-    nextcloud-client
     python315
     spotify
     stremio
@@ -146,6 +146,7 @@
     vim
     vlc
     wget
+    zoom-us
   ];
 
   nixpkgs.config.permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
