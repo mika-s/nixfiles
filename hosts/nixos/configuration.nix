@@ -110,6 +110,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    anki-bin
     brave
     ffmpeg_6-headless
     filezilla
