@@ -73,7 +73,7 @@
   users.users.myuser = {
     isNormalUser = true;
     description = "Myuser";
-    extraGroups = [ "docker" "networkmanager" "wheel" ];
+    extraGroups = [ "docker" "networkmanager" "wheel" "plugdev" ];
     packages = with pkgs; [
     ];
   };
@@ -101,6 +101,8 @@
 
     home.stateVersion = "24.05";
   };
+
+  hardware.rtl-sdr.enable = true;
 
   programs.steam = {
     enable = true;
@@ -139,6 +141,7 @@
     jetbrains.rust-rover
     jq
     python315
+    sdrangel
     spotify
     stremio
     tree
