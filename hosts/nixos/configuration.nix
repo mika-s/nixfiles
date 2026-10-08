@@ -143,7 +143,7 @@
     python315
     sdrangel
     spotify
-    stremio
+    stremio-linux-shell
     tree
     unixtools.xxd
     unzip
